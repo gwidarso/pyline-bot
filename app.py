@@ -63,7 +63,7 @@ def handle_message(event):
             line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text="Wa! Sorry, we don't have Level {}\n".format(check_level[0])),
-            TextSendMessage(text="Please choose from Level 1-7 only."))        
+            TextSendMessage(text="Please choose from Level 1-6 only."))        
         
         # cek pilihan level nya udah sesuai
         else:
