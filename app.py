@@ -45,7 +45,7 @@ def handle_message(event):
         global check_level
         check_level = []
         
-        for i in check_level:
+        for i in level:
             try:
                 int(i)
                 check_level.append(int(i))
