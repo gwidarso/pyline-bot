@@ -62,8 +62,7 @@ def handle_message(event):
         elif check_level[0] not in range(1,7):
             line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text="Wa! Sorry, we don't have that Level."),
-            TextSendMessage(text="Please choose from Level 1-6 only."))        
+            TextSendMessage(text="Wa! Sorry, we don't have Level {}.".format(check_level[0])))        
         
         # cek pilihan level nya udah sesuai
         else:
